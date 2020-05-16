@@ -1,0 +1,21 @@
+{
+  "name": "translator",
+  "version": "1.0.0",
+  "description": "Private translator bot for Discord with DeepL backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "James Kao",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bufferutil": "^4.0.1",
+    "cld3-asm": "^3.1.1",
+    "discord.js": "^12.2.0",
+    "nconf": "^0.10.0",
+    "nconf-yaml": "^1.0.2",
+    "qs": "^6.9.4",
+    "utf-8-validate": "^5.0.2"
+  }
+}
