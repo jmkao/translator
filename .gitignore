@@ -1,4 +1,5 @@
 config.yaml
+mogra-translator*.json
 
 # Logs
 logs

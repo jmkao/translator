@@ -8,7 +8,15 @@
   },
   "author": "James Kao",
   "license": "ISC",
+  "nodemonConfig": {
+    "ext": "*.yaml,*.js",
+    "ignore": [
+      "node_modules/*"
+    ],
+    "delay": "2500"
+  },
   "dependencies": {
+    "@google-cloud/logging": "^7.3.0",
     "axios": "^0.19.2",
     "bufferutil": "^4.0.1",
     "cld3-asm": "^3.1.1",

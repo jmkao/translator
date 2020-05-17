@@ -1,4 +1,9 @@
 discord_bot_token: asdf;lkjgha;sdlfkjgcvj
 deepl_auth_key: a;ldskf-asdfj-asdlfkj-;alsdkfj
-auto_trans_channel: translation-chat
 prefix: '!'
+gcp_project: my-project-id
+gcp_log_name: nodejs_console
+cross_channel_pairs:
+  "987654321098765342": "987654321098765342"
+  "123456789012345678": "987654321098765342"
+  "123456789012345678": "987654321098765342"
