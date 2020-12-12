@@ -16,7 +16,7 @@
     "delay": "2500"
   },
   "dependencies": {
-    "@google-cloud/logging": "^7.3.0",
+    "@google-cloud/logging": "^9.0.0",
     "axios": "^0.19.2",
     "bufferutil": "^4.0.1",
     "cld3-asm": "^3.1.1",
