@@ -26,7 +26,7 @@ async function info(msg) {
   log.info(logging.entry(null, msg));
 }
 async function warn(msg) {
-  log.warn(logging.entry(null, msg));
+  log.warning(logging.entry(null, msg));
   console.log(msg);
 }
 async function error(msg) {
@@ -153,12 +153,17 @@ async function translate(text, lang, message) {
 async function deeplTranslate(text, targetLang, message) {
   try {
     const request = {
-      auth_key: deepl_auth_key,
       target_lang: targetLang,
       text: text,
     };
+
+    const config = {
+      headers: {
+        "Authorization": `DeepL-Auth-Key ${deepl_auth_key}`
+      }
+    };
     info({service: 'TRANSLATE', method: 'deepl-request', msgId: message.id, to_lang: targetLang, message: text, length: text.length, details: request});
-    const response = await axios.post(deepl_url, qs.stringify(request))
+    const response = await axios.post(deepl_url, qs.stringify(request), config);
     client.user.setActivity("DeepL");
   
     info({service: 'TRANSLATE',
